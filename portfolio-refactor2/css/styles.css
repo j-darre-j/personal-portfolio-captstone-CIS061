@@ -1,0 +1,780 @@
+/*  Student Name: Jeffrey Jones
+    File Name: styles.css
+    Date: 11/17/2020
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, h1, h2, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Page trainsition definition. */
+main {
+    animation: transitionIn 1.5s;
+}
+
+/* Page trainsition definition. */
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-25deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+/*Style rule for body and image*/
+body {
+    background-color: #222831;
+}
+
+/* Style rules if an image is present in the navbar. */
+nav img {
+    display: inline-block;
+    max-width: 50px;
+    max-height: 50px;
+    vertical-align: middle;
+
+}
+
+/* Style rules for my face. */
+.jeff_icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+/* Style rules for hamburger menu*/
+.mobile-nav {
+    box-shadow: none;
+}
+
+.mobile-nav a {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 1%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Ensuring hamburger menu is white to contrast dark background. */
+svg {
+    fill: #fff
+}
+
+/* Style rules for the index and about main content containers. */
+#index-introduction, #about {
+    display: block;
+    margin: auto;
+    padding: 3%;
+    text-align: center;
+   
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links id*/
+.mobile {
+    display: block;
+}
+
+.tablet-desktop, #menu-links {
+    display: none;
+}
+
+/* General style rules for all pages. */
+main {
+    font-family: "Poppins", Geneva, Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Style rules for main content, sorted by IDs and Classes */
+#index-introduction, #about {
+    font-family: "Poppins", Geneva, Arial, sans-serif;
+    overflow: auto;
+    padding-top: 1%;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* General style rules for all pages h2 elements. */
+#index-introduction h2, #about h2, #form h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* General style rules for all pages h3 elements. */
+#index-introduction h3, #about h3, #audio-sample h3, #skills_container h3, #contact h3 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    margin: 0;
+}
+
+/* General style rules for all pages paragraph elements. */
+#index-introduction p, #about p, #audio-sample p, #skills_container p, #contact p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+/* Mobile: Padding for content for skills, about, and contact. */
+#skills_container, #about, #contact {
+    padding: 10% 5% 15% 5%;
+}
+
+/* Mobile: Style rules for about.html list */
+#my-timeline {
+    text-align: left;
+    padding-top: 15px;
+    max-width: 90%;
+    margin: auto; 
+}
+
+#my-timeline ul {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-position: outside;
+    text-decoration: none;
+}
+
+/* Mobile: Style rules for contact.html list */
+#contact-list {
+    text-align: left;
+    padding-top: 15px;
+    max-width: 90%;
+    margin: auto; 
+}
+
+#contact-list ul {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-position: outside;
+    text-decoration: none;
+}
+
+/* Mobile: Style rules for the table in skills.html */
+table {
+    width: 75%;
+    margin: 0 auto 100px auto;
+    border: 1px solid #fff;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+    padding: 1%;
+}
+
+th, td {
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+/* Mobile: Style rules for writings.html list */
+.writings-container {
+    padding-top: 10%;
+    padding-bottom: 25%;
+}
+
+.writings-container a {
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    display: block;
+}
+
+.projects_container {
+    padding: 10% 15% 5% 15%;
+}
+
+.projects_container h2 {
+    text-align: center;
+    font-size: 46px;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 1%;
+}
+
+/* Mobile: Style rules for the grid in projects.html. */
+.grid_projects {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 20px;
+    align-content: center;
+}
+
+.grid_projects > article {
+    border: 2px solid #cccccc;
+    box-shadow: 0px 4px 8px #30475e;
+    transition: 0.3s;
+}
+
+.grid_projects > article:hover {
+    box-shadow: 0px 8px 16px #d6d6d6 
+}
+
+.grid_projects > article img {
+    max-width: 100%;
+}
+
+.card-text {
+    font-size: 1.25em;
+    padding: 0 20px 20px;
+}
+
+.card-text > p {
+    font-family: "Poppins", sans-serif;
+}
+
+.card-text > h3 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 26px;
+}
+
+.card-text > button {
+    display: block;
+    margin: auto;
+    background: #d65a31;
+    border: 0;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 75%;
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card-text > button span {
+    justify-content: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.card-text > button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.card-text > button:hover span {
+    padding-right: 25px;
+}
+
+.card-text > button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Style rules for the map */
+.map {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    border: 4px solid #000;
+    width: 90%;
+    height: 80%;
+}
+
+/* Style rules for the form */
+#form {
+    margin-top: 2%;
+    padding: 2%;
+    font-family: "Open Sans", sans-serif;
+}
+
+fieldset, input, textarea {
+    margin-bottom: 2%;
+}
+
+label {
+    display: block;
+    padding-top: 1%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #d65a31;
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px;
+}
+
+/* Style rules for the audio in writings.html */
+#audio-sample audio {
+    display: block;
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+/*Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    background-color: #d65a31;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+footer a {
+    color: #e3eaf8;
+    text-decoration: none;
+  }
+
+.social-icons {
+    margin: auto;
+}
+
+.copyright-text {
+    position: relative;
+    top: -10px;
+}
+
+.social-icons img {
+    display: inline-block;
+    width: 32px;
+    padding: 1%;
+    vertical-align: middle; 
+    white-space: nowrap;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+    /* Tablet Viewport: Style rules for img */
+    .tablet-desktop {
+        display: block;
+        max-width: 100%;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    /*Style rules for navigation area*/
+    nav {
+        /*position: -webkit-sticky;*/
+        position: relative;
+        padding: 1%;
+        z-index: 30;
+        box-shadow: 0px 2px 1px -1px #d65a31;
+        margin: 10px 100px 75px 100px;
+        overflow: hidden;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        font-size: 1.5em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        border-top: 1px solid #696969;
+    }
+
+    nav li:first-child {
+        border-top: none;
+    }
+
+    nav li a {
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 0.1em ;
+        text-decoration: none;
+    }
+
+    /* TabletViewport: Style rules for about.html list */
+    #my-timeline {
+        text-align: left;
+        padding-top: 15px;
+        width: 50%;
+        margin: auto; 
+    }
+
+    #my-timeline ul {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        list-style-position: outside;
+        text-decoration: none;
+    }
+
+    .contact-list {
+        text-align: center;
+    }
+    
+    .contact-list ul {
+        display: inline-block;
+        text-decoration: none;
+        text-align: left;
+        list-style: inside;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* TabletViewport: Style rules for the project cards */
+    .grid_projects {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        gap: 20px;
+        align-content: center;
+    }
+    
+    .grid_projects > article {
+        border: 2px solid #cccccc;
+        box-shadow: 0px 4px 8px #30475e;
+        transition: 0.3s;
+    }
+    
+    .grid_projects > article:hover {
+        box-shadow: 0px 8px 16px #d6d6d6 
+    }
+    
+    .grid_projects > article img {
+        max-width: 100%;
+    }
+    
+    .card-text {
+        font-size: 1.25em;
+        padding: 0 20px 20px;
+    }
+    
+    .card-text > p {
+        font-family: "Poppins", sans-serif;
+    }
+    
+    .card-text > h3 {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-size: 26px;
+    }
+    
+    .card-text > button {
+        display: block;
+        margin: auto;
+        background: #d65a31;
+        border: 0;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 75%;
+        font-size: 17px;
+        color: #fff;
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
+        border-radius: 10px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    
+    .card-text > button span {
+        justify-content: center;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .card-text > button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .card-text > button:hover span {
+        padding-right: 25px;
+    }
+    
+    .card-text > button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    /* Tablet Viewport: Style rules for the tables */
+    table {
+        width: 75%;
+        margin: 0 auto 100px auto;
+        border: 1px solid #fff;
+    }
+
+    table, tr, th, td {
+        border-collapse: collapse;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid #fff;
+        text-align: center;
+    }
+
+    /* Tablet Viewport: Style rules for the forms */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* Tablet Viewport: Style rules for header image*/
+    header img {
+        display: block;
+        width: 256px;
+        height: 256px;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        margin: 0.5%;
+    }
+
+    nav li a {
+        padding: 0.1em 1em;
+    }
+
+    #skills_container, #about, #contact {
+        padding-top: 0;
+        padding-bottom: 0;   
+    }
+
+    .projects_container {
+        padding-top: 0;
+    }
+
+    .writings-container {
+        padding-top: 0;
+        padding-bottom: 5%;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1024px), print {
+    /* Desktop Viewport: Style rules for header */
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    header img {
+        display: block;
+        width: 256px;
+        height: 256px;
+    }
+
+    /* DesktopViewport: Style rules for the grid cards*/
+    .grid_projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        align-content: center;
+    }
+    
+    .grid_projects > article {
+        border: 2px solid #cccccc;
+        box-shadow: 0px 4px 8px #30475e;
+        transition: 0.3s;
+    }
+    
+    .grid_projects > article:hover {
+        box-shadow: 0px 8px 16px #d6d6d6 
+    }
+    
+    .grid_projects > article img {
+        max-width: 100%;
+    }
+    
+    .card-text {
+        font-size: 1.25em;
+        padding: 0 20px 20px;
+    }
+    
+    .card-text > p {
+        font-family: "Poppins", sans-serif;
+    }
+    
+    .card-text > h3 {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-size: 26px;
+    }
+    
+    .card-text > button {
+        display: block;
+        margin: auto;
+        background: #d65a31;
+        border: 0;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 75%;
+        font-size: 17px;
+        color: #fff;
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
+        border-radius: 10px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    
+    .card-text > button span {
+        justify-content: center;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .card-text > button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .card-text > button:hover span {
+        padding-right: 25px;
+    }
+    
+    .card-text > button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    /* DesktopViewport: Style rules for the table*/
+    table {
+        width: 75%;
+        margin: 0 auto 100px auto;
+        border: 1px solid #fff;
+    }
+
+    table, tr, th, td {
+        border-collapse: collapse;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid #fff;
+        text-align: center;
+    }
+
+    /* Desktop Viewport: Style rules for the forms */
+    form {
+        padding-top: -50px;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .btn {
+        margin: auto;
+    }
+
+    /* DesktopViewport: Style rules for the main area */
+    #index-introduction, #about {
+        display: block;
+        margin: auto;
+        text-align: center;
+        max-width: 1000px;
+    }
+
+    /* DesktopViewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        margin: 0.5%;
+        font-size: 1.25em;
+    }
+
+    nav li a {
+        padding: 0.1em 1em;
+    }
+
+    nav li a:hover {
+        color: #000;
+        background-color: #fff;
+    }
+
+    /* DesktopViewport: Style rules for about.html list */
+    #my-timeline {
+        text-align: left;
+        padding-top: 15px;
+        width: 50%;
+        margin: auto; 
+    }
+
+    #my-timeline ul {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        list-style-position: outside;
+        text-decoration: none;
+    }
+
+    .contact-list {
+        text-align: center;
+    }
+    
+    .contact-list ul {
+        display: inline-block;
+        text-decoration: none;
+        text-align: left;
+        list-style: inside;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #skills_container, #about, #contact {
+        padding-top: 0;
+        padding-bottom: 0;   
+    }
+
+    .projects_container {
+        padding-top: 0;
+    }
+
+    .writings-container {
+        padding-top: 0;
+        padding-bottom: 5%;
+    }
+
+
+}

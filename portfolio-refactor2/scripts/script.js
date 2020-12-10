@@ -1,0 +1,19 @@
+/*  Student Name: Jeffrey Jones
+    File Name: script.js
+    Date: 11/16/2020
+*/
+
+// Hamburger menu function
+function hamburger() {
+    var menu = document.getElementById("menu-links");
+    var logo = document.getElementById("jeff-logo");
+    if (menu.style.display === "block" && logo.style.display === "none") {
+        menu.style.display = "none";
+        logo.style.dispaly = "block";
+    } 
+    else {
+        menu.style.display = "block";
+        logo.style.display = "none";
+    }
+
+}

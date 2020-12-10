@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- 
+    Student Name: Jeffrey Jones
+    File Name: template.html
+    Date: 09/13/2020
+-->
+
+<html lang="en">
+<head>
+    <title>Jeff Jones | Creative Writings</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!-- Use the header for name or logo.-->
+<header>
+    
+</header>
+
+<!-- Use nav area for links to other parts of the website.-->
+<!-- Mobile navbar-->
+<nav class="mobile-nav">
+    <div id="menu-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Recent Projects</a>
+        <a href="writings.html">Writings</a>
+        <a href="skills.html">Skills</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact Info</a>
+    </div>
+    <a class ="menu-icon" onclick="hamburger()">
+        <div>
+            <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="15"></rect>
+            <rect y="30" width="100" height="15"></rect>
+            <rect y="60" width="100" height="15"></rect>
+            </svg>
+        </div>
+    </a>
+</nav>
+
+<!-- Tablet-desktop navbar-->
+<nav class="tablet-desktop">
+    <ul>
+       <!-- <a href="index.html"><img src="images/JeffIcon_Circle_2.png" alt="picture of jeff"> </a> -->
+        <li><a href="index.html">Home</a>
+        <li><a href="projects.html">Recent Projects</a> </li>
+        <li><a href="writings.html">Writings</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact Info</a></li>
+    </ul> 
+</nav>
+
+<!-- Use main to add the main content of the webpage.-->
+ <main>
+    <div class="writings-container">
+     <div id="audio-sample">
+         <h3>Audio samples of some of my work.</h3>
+
+        <p>Intro to Sudden Storm.</p>
+        <a href="https://docs.google.com/document/d/1UKbN2WMAB6EpWtd0BM4aA1JG0pm3vQZCEf6SlTkPYo8/edit?usp=sharing" target="_blank">Transcript</a>
+         <audio controls>
+             <source src="media/SuddenStormCH1Sample.wav" type="audio/wav">
+            <p>Your browser does not support audio elements.</p>
+         </audio>
+
+         <p>An essay on bodily autonomy.</p>
+         <a href="https://docs.google.com/document/d/1YiqYQk5Fy1fkbo6sHZvQFoHQUcHcqlnHBWvibNYeKkM/edit?usp=sharing" target="_blank">Transcript</a>
+         <audio controls>
+            <source src="media/GovtControlReading.mp3" type="audio/mp3">
+           <p>Your browser does not support audio elements.</p>
+        </audio>
+         
+     </div>
+    </div>
+   </main>
+
+<!-- Use footer area to add webpage footer content.-->
+<footer>
+    <div class="social-icons">
+    <a href="https://twitter.com/home" target="_blank"><img class="twitter_icon" src="images/twitter-xxl.png" alt="twitter icon"></a>
+
+    <a href="https://www.linkedin.com/" target="_blank"><img class="linkedIn_icon" src="images/linkedin-6-xxl.png" alt="linkedIn icon"></a>
+
+    <a href="https://github.com/" target="_blank"><img class="github_icon" src="images/github-11-xxl.png" alt="github icon"></a>
+
+    <a href="mailto:jjone208@students.solano.edu" target="_blank"><img class="email_icon" src="images/email-12-xxl.png" alt="email icon"></a>
+    </div>
+
+    <div class="copyright-text">
+    <p>&copy; Copyright 2020. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+
+
+</body>
+
+</html>
